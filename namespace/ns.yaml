@@ -1,11 +1,11 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name : nginx
-  labels:
-    project: roboshop
-    component: frontend
-    tier: frontend
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name : nginx
+#   labels:
+#     project: roboshop
+#     component: frontend
+#     tier: frontend
 
 # namespace is isolated space in k8 cluster were we can create our project related resource , in k8s cluster we can create mutliple , with
 # scure , without of realtion of any projec 
@@ -17,3 +17,12 @@ metadata:
 #     project: roboshop            # Project identifier
 #     component: frontend          # Component type
 #     tier: frontend               # Application tier
+
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: nginx
+  labels:
+    project: roboshop 
+    component: frontend 
+    tier: frontend
